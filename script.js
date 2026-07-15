@@ -1,134 +1,106 @@
-// ===============================
-// CONTADOR REGRESSIVO
-// ===============================
+/* ==========================
+   CONFIGURAÇÕES GERAIS
+========================== */
 
-const dataCasamento = new Date("2026-10-03T17:00
-    ").getTime();
-
-function atualizarContador() {
-
-    const agora = new Date().getTime();
-
-    const diferenca = dataCasamento - agora;
-
-    if (diferenca <= 0) {
-
-        document.getElementById("dias").textContent = "00";
-        document.getElementById("horas").textContent = "00";
-        document.getElementById("minutos").textContent = "00";
-        document.getElementById("segundos").textContent = "00";
-
-        return;
-    }
-
-    const dias = Math.floor(diferenca / (1000 * 60 * 60 * 24));
-
-    const horas = Math.floor(
-        (diferenca % (1000 * 60 * 60 * 24)) /
-        (1000 * 60 * 60)
-    );
-
-    const minutos = Math.floor(
-        (diferenca % (1000 * 60 * 60)) /
-        (1000 * 60)
-    );
-
-    const segundos = Math.floor(
-        (diferenca % (1000 * 60)) /
-        1000
-    );
-
-    document.getElementById("dias").textContent = dias;
-    document.getElementById("horas").textContent = horas;
-    document.getElementById("minutos").textContent = minutos;
-    document.getElementById("segundos").textContent = segundos;
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-atualizarContador();
+body {
+    font-family: 'Georgia', serif;
+    color: #333;
+    background: #faf8f5;
+    line-height: 1.6;
+}
 
-setInterval(atualizarContador,1000);
-
-
-// ===============================
-// ANIMAÇÃO AO ROLAR A PÁGINA
-// ===============================
-
-const secoes = document.querySelectorAll("section");
-
-const observador = new IntersectionObserver((entradas)=>{
-
-    entradas.forEach((entrada)=>{
-
-        if(entrada.isIntersecting){
-
-            entrada.target.style.opacity="1";
-            entrada.target.style.transform="translateY(0px)";
-
-        }
-
-    });
-
-},{
-    threshold:0.15
-});
-
-secoes.forEach((secao)=>{
-
-    secao.style.opacity="0";
-    secao.style.transform="translateY(50px)";
-    secao.style.transition="all .8s ease";
-
-    observador.observe(secao);
-
-});
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
 
 
-// ===============================
-// EFEITO BOTÃO
-// ===============================
+/* ==========================
+   CAPA / HERO
+========================== */
 
-const botoes = document.querySelectorAll(".botao");
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background:
+    linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
+    url("imagem-casal.jpg");
 
-botoes.forEach(botao=>{
-
-    botao.addEventListener("mouseenter",()=>{
-
-        botao.style.transform="scale(1.05)";
-
-    });
-
-    botao.addEventListener("mouseleave",()=>{
-
-        botao.style.transform="scale(1)";
-
-    });
-
-});
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
 
 
-// ===============================
-// SCROLL SUAVE
-// ===============================
+.hero h1 {
+    font-size: 4rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
 
-document.querySelectorAll('a[href^="#"]').forEach(link=>{
+.hero p {
+    font-size: 1.3rem;
+    margin-top: 15px;
+}
 
-    link.addEventListener("click",(e)=>{
 
-        e.preventDefault();
+/* ==========================
+   CONTADOR
+========================== */
 
-        const destino=document.querySelector(link.getAttribute("href"));
+.contador {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
 
-        if(destino){
+.contador div {
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255,255,255,0.4);
+    border-radius: 15px;
+    padding: 20px;
+    min-width: 100px;
+}
 
-            destino.scrollIntoView({
+.contador span {
+    display: block;
+    font-size: 2.2rem;
+    font-weight: bold;
+}
 
-                behavior:"smooth"
+.contador small {
+    font-size: 1rem;
+}
 
-            });
 
-        }
+/* ==========================
+   SEÇÕES
+========================== */
 
-    });
+section {
+    padding: 70px 0;
+    text-align: center;
+}
 
-});
+h2 {
+    font-size: 2.2rem;
+    color: #8b6f47;
+    margin-bottom: 25px;
+}
+
+h3 {
+    color: #8b6f47;
+    font-size: 1.
+    
