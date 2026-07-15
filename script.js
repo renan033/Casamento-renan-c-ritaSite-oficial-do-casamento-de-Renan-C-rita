@@ -2,7 +2,8 @@
 // CONTADOR REGRESSIVO
 // ===============================
 
-const dataCasamento = new Date("2026-10-03T17:30:00").getTime();
+const dataCasamento = new Date("2026-10-03T17:00
+    ").getTime();
 
 function atualizarContador() {
 
