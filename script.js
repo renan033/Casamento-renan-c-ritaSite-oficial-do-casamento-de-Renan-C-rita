@@ -43,3 +43,20 @@ function copiarPix(){
             alert("Não foi possível copiar a chave Pix.");
         });
 }
+function copiarPix(){
+
+    const chave = "77981681506";
+
+    navigator.clipboard.writeText(chave);
+
+    const botao = document.querySelector(".pix-card .botao");
+
+    botao.innerHTML = "✅ Chave copiada!";
+
+    setTimeout(()=>{
+
+        botao.innerHTML="📋 Copiar chave Pix";
+
+    },2000);
+
+}

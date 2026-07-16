@@ -149,3 +149,119 @@ padding:35px;
     font-weight: bold;
     text-align: center;
 }
+/* ---------- LISTA DE PRESENTES ---------- */
+
+#presentes{
+    background:#faf7f2;
+}
+
+.presente-texto{
+    max-width:700px;
+    margin:20px auto 40px;
+    color:#555;
+    line-height:1.8;
+}
+
+.pix-card{
+
+    max-width:520px;
+
+    margin:auto;
+
+    background:white;
+
+    border-radius:24px;
+
+    padding:40px;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.12);
+
+    text-align:center;
+
+    border:2px solid #d8c08d;
+
+}
+
+.pix-icon{
+
+    font-size:60px;
+
+    margin-bottom:15px;
+
+}
+
+.pix-card h3{
+
+    color:#12355B;
+
+    font-size:30px;
+
+    margin-bottom:20px;
+
+}
+
+.pix-chave{
+
+    background:#F8F5EF;
+
+    color:#12355B;
+
+    font-size:24px;
+
+    font-weight:bold;
+
+    padding:18px;
+
+    border-radius:12px;
+
+    border:2px dashed #C8A96A;
+
+    margin-bottom:25px;
+
+}
+
+.pix-card .botao{
+
+    width:100%;
+
+    font-size:18px;
+
+    margin-bottom:30px;
+
+    transition:.3s;
+
+}
+
+.pix-card .botao:hover{
+
+    transform:translateY(-3px);
+
+}
+
+.qr-code img{
+
+    width:220px;
+
+    margin:20px auto;
+
+    display:block;
+
+    border-radius:12px;
+
+    background:white;
+
+    padding:10px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.pix-card small{
+
+    color:#666;
+
+    display:block;
+
+    margin-top:15px;
+
+}
