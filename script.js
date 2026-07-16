@@ -30,3 +30,12 @@ document.getElementById("segundos").textContent = segundos;
 
 atualizarContador();
 setInterval(atualizarContador, 1000);
+function copiarPix(){
+
+    const chave="77981681506";
+
+    navigator.clipboard.writeText(chave);
+
+    alert("Chave Pix copiada com sucesso!");
+
+}
