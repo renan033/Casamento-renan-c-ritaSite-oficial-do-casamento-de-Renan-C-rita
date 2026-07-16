@@ -140,22 +140,12 @@ padding:35px;
 }
 
 .pix-chave{
-
-    background:#f4f4f4;
-
-    padding:18px;
-
-    border-radius:12px;
-
-    font-size:22px;
-
-    font-weight:bold;
-
-    color:#031c37; !important;
-    
-
-    margin-bottom:25px;
-
-    word-break:break-word;
-
+    background: #F8F5EF;
+    color: #12355B;
+    border: 2px solid #C8A96A;
+    padding: 18px;
+    border-radius: 12px;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
 }
