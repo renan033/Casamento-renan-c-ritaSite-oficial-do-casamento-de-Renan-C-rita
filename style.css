@@ -482,3 +482,278 @@ section h2{
 
 
 }
+/* NAVBAR */
+
+.navbar{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 40px;
+
+    background:rgba(18,53,91,.90);
+
+    backdrop-filter:blur(10px);
+
+    z-index:999;
+
+}
+
+.logo{
+
+    color:white;
+
+    font-size:30px;
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-weight:700;
+
+}
+
+.menu{
+
+    display:flex;
+
+    gap:25px;
+
+    list-style:none;
+
+}
+
+.menu a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+.menu a:hover{
+
+    color:#C8A96A;
+
+}/* ===========================
+   PÁGINA DE PRESENTES
+=========================== */
+
+.hero-presente{
+    padding:140px 20px 70px;
+    background:#faf7f2;
+    text-align:center;
+}
+
+.hero-presente h1{
+    font-size:56px;
+    color:#12355B;
+    margin-bottom:20px;
+}
+
+.hero-presente p{
+    max-width:700px;
+    margin:auto;
+    color:#666;
+    line-height:1.8;
+    font-size:18px;
+}
+
+.presentes-grid{
+    max-width:1200px;
+    margin:50px auto;
+    padding:0 20px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+}
+
+.presente-card{
+
+    background:white;
+
+    border-radius:22px;
+
+    padding:35px;
+
+    text-align:center;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.10);
+
+    transition:.35s;
+
+}
+
+.presente-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.presente-card h2{
+
+    color:#12355B;
+
+    margin-bottom:20px;
+
+}
+
+.presente-card p{
+
+    color:#666;
+
+    line-height:1.7;
+
+    margin-bottom:20px;
+
+}
+
+.presente-card h3{
+
+    color:#C8A96A;
+
+    font-size:34px;
+
+    margin-bottom:25px;
+
+}
+
+.presente-card .botao{
+
+    display:block;
+
+    margin:12px auto;
+
+    width:100%;
+
+}
+
+
+/* ===========================
+   MODAL PIX
+=========================== */
+
+.modal{
+
+    display:none;
+
+    position:fixed;
+
+    left:0;
+
+    top:0;
+
+    width:100%;
+
+    height:100%;
+
+    background:rgba(0,0,0,.65);
+
+    z-index:9999;
+
+}
+
+.modal-conteudo{
+
+    background:white;
+
+    width:90%;
+
+    max-width:430px;
+
+    margin:7% auto;
+
+    padding:35px;
+
+    border-radius:25px;
+
+    text-align:center;
+
+    position:relative;
+
+    animation:aparecer .35s;
+
+}
+
+@keyframes aparecer{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(-25px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.modal-conteudo img{
+
+    width:220px;
+
+    margin:25px auto;
+
+    display:block;
+
+}
+
+.fechar{
+
+    position:absolute;
+
+    top:18px;
+
+    right:22px;
+
+    font-size:34px;
+
+    cursor:pointer;
+
+    color:#12355B;
+
+}
+
+.modal .pix-chave{
+
+    background:#F8F5EF;
+
+    color:#12355B;
+
+    border:2px dashed #C8A96A;
+
+    border-radius:15px;
+
+    padding:18
+    .icone-presente{
+    font-size:70px;
+    margin-bottom:20px;
+}
+
+.presente-card{
+    max-width:450px;
+    margin:40px auto;
+}.icone-presente{
+    font-size:70px;
+    margin-bottom:20px;
+}
