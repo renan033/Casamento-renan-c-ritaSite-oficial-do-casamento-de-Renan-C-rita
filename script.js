@@ -32,10 +32,14 @@ atualizarContador();
 setInterval(atualizarContador, 1000);
 function copiarPix(){
 
-    const chave="77981681506";
+  function copiarPix() {
+    const chave = "77981681506";
 
-    navigator.clipboard.writeText(chave);
-
-    alert("Chave Pix copiada com sucesso!");
-
+    navigator.clipboard.writeText(chave)
+        .then(() => {
+            alert("Chave Pix copiada com sucesso!");
+        })
+        .catch(() => {
+            alert("Não foi possível copiar a chave Pix.");
+        });
 }
