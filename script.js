@@ -33,64 +33,81 @@ const contador = document.getElementById("contador");
 
 if (contador) {
 
-    function atualizarContador() {
+function atualizarContador(){
 
-        // 03/09/2026 às 17:00 (horário local)
-       const casamento = new Date(2026, 9, 3, 17, 0, 0);
+    const dataCasamento = new Date(2026, 9, 3, 17, 0, 0);
 
-        const agora = new Date();
+    const agora = new Date();
 
-        const diferenca = dataCasamento - agora;
+    const distancia = dataCasamento - agora;
 
-        if (diferenca <= 0) {
 
-            contador.innerHTML = `
-                <div class="tempo">
-                    <h3>💍</h3>
-                    <span>Chegou o grande dia!</span>
-                </div>
-            `;
-            return;
-
-        }
-
-        const dias = Math.floor(diferenca / (1000 * 60 * 60 * 24));
-
-        const horas = Math.floor((diferenca % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-
-        const minutos = Math.floor((diferenca % (1000 * 60 * 60)) / (1000 * 60));
-
-        const segundos = Math.floor((diferenca % (1000 * 60)) / 1000);
+    if(distancia <= 0){
 
         contador.innerHTML = `
-
         <div class="tempo">
-            <h3>${dias}</h3>
-            <span>Dias</span>
+            <h3>💍</h3>
+            <span>Chegou o grande dia!</span>
         </div>
-
-        <div class="tempo">
-            <h3>${horas}</h3>
-            <span>Horas</span>
-        </div>
-
-        <div class="tempo">
-            <h3>${minutos}</h3>
-            <span>Minutos</span>
-        </div>
-
-        <div class="tempo">
-            <h3>${segundos}</h3>
-            <span>Segundos</span>
-        </div>
-
         `;
+
+        return;
 
     }
 
-    atualizarContador();
 
-    setInterval(atualizarContador, 1000);
+    const dias = Math.floor(
+        distancia / (1000 * 60 * 60 * 24)
+    );
+
+
+    const horas = Math.floor(
+        (distancia % (1000 * 60 * 60 * 24))
+        /(1000 * 60 * 60)
+    );
+
+
+    const minutos = Math.floor(
+        (distancia % (1000 * 60 * 60))
+        /(1000 * 60)
+    );
+
+
+    const segundos = Math.floor(
+        (distancia % (1000 * 60))
+        /1000
+    );
+
+
+    contador.innerHTML = `
+
+    <div class="tempo">
+        <h3>${dias}</h3>
+        <span>Dias</span>
+    </div>
+
+    <div class="tempo">
+        <h3>${horas}</h3>
+        <span>Horas</span>
+    </div>
+
+    <div class="tempo">
+        <h3>${minutos}</h3>
+        <span>Min</span>
+    </div>
+
+    <div class="tempo">
+        <h3>${segundos}</h3>
+        <span>Seg</span>
+    </div>
+
+    `;
+
+}
+
+atualizarContador();
+
+setInterval(atualizarContador,1000);
 
 }
 
