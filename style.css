@@ -1,3 +1,8 @@
+/* ===============================
+   RENAN & CÁRITA
+   CASAMENTO 22.08.2026
+================================ */
+
 *{
     margin:0;
     padding:0;
@@ -10,860 +15,363 @@ html{
 
 body{
     font-family:'Poppins',sans-serif;
-    background:#faf7f2;
+    background:#f8f6f2;
     color:#333;
+    line-height:1.7;
 }
 
+/* ===============================
+   HERO
+================================ */
 
-h1,h2,h3{
-    font-family:'Cormorant Garamond',serif;
-}
+.hero{
 
+    min-height:100vh;
 
-section{
-    /* ===========================
-   MENU PREMIUM
-=========================== */
+    background:
+    linear-gradient(rgba(0,0,0,.45),
+    rgba(0,0,0,.45)),
+    url("imagens/capa.jpg");
 
-.navbar{
+    background-size:cover;
 
-    position:fixed;
-
-    top:20px;
-
-    left:50%;
-
-    transform:translateX(-50%);
-
-    width:92%;
-
-    max-width:1350px;
-
-    padding:15px 30px;
+    background-position:center;
 
     display:flex;
 
-    justify-content:space-between;
+    justify-content:center;
 
     align-items:center;
 
-    background:rgba(18,53,91,.88);
+    text-align:center;
 
-    backdrop-filter:blur(15px);
+    padding:40px;
 
-    border-radius:18px;
+}
 
-    box-shadow:0 12px 30px rgba(0,0,0,.20);
+.hero-conteudo{
 
-    z-index:9999;
+    color:white;
+
+    max-width:900px;
+
+}
+
+.hero h1{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:72px;
+
+    margin-bottom:20px;
+
+}
+
+.hero p{
+
+    font-size:22px;
+
+    margin-bottom:40px;
+
+}
+
+//* =========================
+MENU PREMIUM
+========================= */
+
+.navbar{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+padding:18px 8%;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+background:rgba(18,53,91,.90);
+
+backdrop-filter:blur(15px);
+
+z-index:999;
 
 }
 
 .logo{
 
-    color:white;
+font-size:32px;
 
-    font-size:30px;
+font-family:'Cormorant Garamond',serif;
 
-    font-family:'Cormorant Garamond',serif;
+text-decoration:none;
 
-    font-weight:700;
+color:#FFF;
 
 }
 
 .logo span{
 
-    color:#D4AF37;
+color:#D4AF37;
 
 }
 
 .menu{
 
-    display:flex;
+display:flex;
 
-    gap:12px;
+gap:25px;
 
-    list-style:none;
-
-}
-
-.menu li{
-
-    list-style:none;
+list-style:none;
 
 }
 
 .menu a{
 
-    display:flex;
+color:#FFF;
 
-    align-items:center;
+text-decoration:none;
 
-    gap:8px;
+transition:.3s;
 
-    text-decoration:none;
-
-    color:white;
-
-    padding:12px 18px;
-
-    border-radius:12px;
-
-    transition:.35s;
-
-    font-weight:500;
+font-weight:500;
 
 }
 
 .menu a:hover{
 
-    background:#D4AF37;
-
-    color:#12355B;
-
-    transform:translateY(-2px);
+color:#D4AF37;
 
 }
 
-body{
+.menu-btn{
 
-    padding-top:110px;
+display:none;
 
-}
+background:none;
 
-    padding:80px 20px;
-    text-align:center;
-}
+border:none;
 
-
-section h2{
-    font-size:48px;
-    color:#12355B;
-    margin-bottom:35px;
-}
-
-
-
-/* CAPA */
-
-.hero{
-
-    height:100vh;
-
-    background:
-    url("imagens/capa.jpg")
-    center/cover no-repeat;
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    position:relative;
-
-    text-align:center;
+cursor:pointer;
 
 }
 
+.menu-btn span{
 
-.overlay{
+display:block;
 
-    position:absolute;
+width:28px;
 
-    inset:0;
+height:3px;
 
-    background:rgba(0,0,0,.45);
+background:#D4AF37;
 
-}
+margin:6px 0;
 
+border-radius:10px;
 
-
-.hero-content{
-
-    position:relative;
-
-    z-index:2;
-
-    color:white;
-
-    padding:20px;
+transition:.4s;
 
 }
 
+    /* ===========================
+   NOSSA HISTÓRIA
+=========================== */
 
+.historia{
 
-.frase{
+    padding:100px 20px;
 
-    font-size:22px;
-
-    font-style:italic;
-
-}
-
-
-
-.hero h1{
-
-    font-size:80px;
-
-    margin:25px 0;
+    background:#ffffff;
 
 }
 
+.container{
 
+    max-width:900px;
 
-.hero h2{
-
-    color:white;
-
-    font-size:35px;
+    margin:auto;
 
 }
 
-
-
-.horario{
-
-    font-size:25px;
-
-    margin-top:10px;
-
-}
-
-
-
-/* BOTÕES */
-
-
-.botao{
-
-    display:inline-block;
-
-    margin-top:30px;
-
-    padding:15px 35px;
-
-    border-radius:50px;
-
-    background:#C8A96A;
-
-    color:white;
-
-    text-decoration:none;
-
-    font-weight:600;
-
-    transition:.3s;
-
-}
-
-
-.botao:hover{
-
-    transform:translateY(-4px);
-
-    background:#b08d4f;
-
-}
-
-
-
-/* CONTADOR */
-
-
-.contador{
-
-    display:flex;
-
-    justify-content:center;
-
-    gap:20px;
-
-    flex-wrap:wrap;
-
-}
-
-
-
-.contador div{
-
-    background:#12355B;
-
-    color:white;
-
-    width:130px;
-
-    padding:25px;
-
-    border-radius:18px;
-
-    box-shadow:0 10px 25px rgba(0,0,0,.15);
-
-}
-
-
-
-.contador span{
+.subtitulo{
 
     display:block;
 
-    font-size:45px;
+    text-align:center;
 
-    font-weight:bold;
+    color:#D4AF37;
+
+    font-weight:600;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    margin-bottom:15px;
 
 }
 
+.historia h2{
 
+    font-family:'Cormorant Garamond', serif;
 
-.contador small{
+    font-size:52px;
 
-    font-size:16px;
+    text-align:center;
+
+    color:#12355B;
+
+    margin-bottom:40px;
 
 }
 
+.historia p{
 
-
-/* HISTÓRIA */
-
-
-#historia p{
-
-    max-width:800px;
-
-    margin:auto;
+    font-size:18px;
 
     line-height:1.9;
 
     color:#555;
 
-}
+    text-align:justify;
 
-
-
-/* CARDS */
-
-
-.card{
-
-    background:white;
-
-    max-width:500px;
-
-    margin:auto;
-
-    padding:35px;
-
-    border-radius:20px;
-
-    box-shadow:0 15px 40px rgba(0,0,0,.10);
+    margin-bottom:25px;
 
 }
+/* ===========================
+   CERIMÔNIA
+=========================== */
 
+.cerimonia{
 
+    padding:100px 20px;
 
-.card h3{
-
-    font-size:32px;
-
-    color:#12355B;
-
-    margin-bottom:20px;
-
-}
-
-
-
-.card p{
-
-    line-height:1.8;
-
-}
-
-
-
-/* CRONOGRAMA */
-
-
-.timeline{
-
-    max-width:700px;
-
-    margin:auto;
-
-}
-
-
-
-.evento{
-
-    background:white;
-
-    margin:20px 0;
-
-    padding:25px;
-
-    text-align:left;
-
-    border-left:5px solid #C8A96A;
-
-    border-radius:15px;
-
-    box-shadow:0 10px 25px rgba(0,0,0,.08);
-
-}
-
-
-
-.evento h3{
-
-    color:#12355B;
-
-    font-size:30px;
-
-}
-
-
-
-/* PRESENTES */
-
-
-#presentes{
-
-    background:#f4efe6;
-
-}
-
-
-
-.pix-card{
-
-    max-width:520px;
-
-    margin:auto;
-
-    background:white;
-
-    padding:40px;
-
-    border-radius:25px;
-
-    box-shadow:0 20px 50px rgba(0,0,0,.12);
-
-}
-
-
-
-.pix-icon{
-
-    font-size:60px;
-
-}
-
-
-
-.pix-card h3{
-
-    color:#12355B;
-
-    font-size:35px;
-
-    margin:20px;
-
-}
-
-
-
-.pix-chave{
-
-    background:#F8F5EF;
-
-    color:#12355B;
-
-    padding:20px;
-
-    border-radius:15px;
-
-    border:2px dashed #C8A96A;
-
-    font-size:25px;
-
-    font-weight:bold;
-
-    margin:25px 0;
-
-}
-
-
-
-.qr-code img{
-
-    width:220px;
-
-    margin-top:30px;
-
-    border-radius:15px;
-
-}
-
-
-
-/* CONFIRMAÇÃO */
-
-
-#confirmacao p{
-
-    max-width:650px;
-
-    margin:auto;
-
-    line-height:1.8;
-
-}
-
-
-
-/* FOOTER */
-
-
-footer{
-
-    background:#12355B;
-
-    color:white;
-
-    padding:40px 20px;
+    background:#F8F6F2;
 
     text-align:center;
 
 }
 
+.descricao{
 
+    max-width:700px;
 
-footer h3{
+    margin:0 auto 50px;
 
-    font-size:40px;
+    font-size:18px;
 
-    margin:15px;
-
-}
-
-
-
-/* CELULAR */
-
-
-@media(max-width:768px){
-
-
-.hero h1{
-
-    font-size:55px;
+    color:#666;
 
 }
 
-
-.hero h2{
-
-    font-size:28px;
-
-}
-
-
-section h2{
-
-    font-size:38px;
-
-}
-
-
-.contador div{
-
-    width:100px;
-
-}
-
-
-.contador span{
-
-    font-size:35px;
-
-}
-
-
-}
-/* NAVBAR */
-
-.navbar{
-
-    position:fixed;
-
-    top:0;
-
-    left:0;
-
-    width:100%;
+.card-evento{
 
     display:flex;
 
-    justify-content:space-between;
+    justify-content:center;
 
-    align-items:center;
-
-    padding:18px 40px;
-
-    background:rgba(18,53,91,.90);
-
-    backdrop-filter:blur(10px);
-
-    z-index:999;
-
-}
-
-.logo{
-
-    color:white;
-
-    font-size:30px;
-
-    font-family:'Cormorant Garamond',serif;
-
-    font-weight:700;
-
-}
-
-.menu{
-
-    display:flex;
+    flex-wrap:wrap;
 
     gap:25px;
 
-    list-style:none;
+    margin-bottom:40px;
 
 }
 
-.menu a{
+.item-evento{
 
-    color:white;
+    background:#fff;
 
-    text-decoration:none;
+    width:260px;
 
-    font-weight:500;
+    padding:30px;
+
+    border-radius:18px;
+
+    box-shadow:0 12px 25px rgba(0,0,0,.08);
 
     transition:.3s;
 
 }
 
-.menu a:hover{
-
-    color:#C8A96A;
-
-}/* ===========================
-   PÁGINA DE PRESENTES
-=========================== */
-
-.hero-presente{
-    padding:140px 20px 70px;
-    background:#faf7f2;
-    text-align:center;
-}
-
-.hero-presente h1{
-    font-size:56px;
-    color:#12355B;
-    margin-bottom:20px;
-}
-
-.hero-presente p{
-    max-width:700px;
-    margin:auto;
-    color:#666;
-    line-height:1.8;
-    font-size:18px;
-}
-
-.presentes-grid{
-    max-width:1200px;
-    margin:50px auto;
-    padding:0 20px;
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-    gap:30px;
-}
-
-.presente-card{
-
-    background:white;
-
-    border-radius:22px;
-
-    padding:35px;
-
-    text-align:center;
-
-    box-shadow:0 15px 35px rgba(0,0,0,.10);
-
-    transition:.35s;
-
-}
-
-.presente-card:hover{
+.item-evento:hover{
 
     transform:translateY(-8px);
 
 }
 
-.presente-card h2{
+.item-evento h3{
 
     color:#12355B;
 
-    margin-bottom:20px;
+    margin-bottom:15px;
 
 }
 
-.presente-card p{
+.item-evento p{
 
     color:#666;
 
-    line-height:1.7;
 
-    margin-bottom:20px;
-
-}
-
-.presente-card h3{
-
-    color:#C8A96A;
-
-    font-size:34px;
-
-    margin-bottom:25px;
-
-}
-
-.presente-card .botao{
-
-    display:block;
-
-    margin:12px auto;
-
-    width:100%;
-
-}
-
-
-/* ===========================
-   MODAL PIX
-=========================== */
-
-.modal{
-
+.menu-toggle{
     display:none;
-
-    position:fixed;
-
-    left:0;
-
-    top:0;
-
-    width:100%;
-
-    height:100%;
-
-    background:rgba(0,0,0,.65);
-
-    z-index:9999;
-
-}
-
-.modal-conteudo{
-
-    background:white;
-
-    width:90%;
-
-    max-width:430px;
-
-    margin:7% auto;
-
-    padding:35px;
-
-    border-radius:25px;
-
-    text-align:center;
-
-    position:relative;
-
-    animation:aparecer .35s;
-
-}
-
-@keyframes aparecer{
-
-    from{
-
-        opacity:0;
-
-        transform:translateY(-25px);
-
-    }
-
-    to{
-
-        opacity:1;
-
-        transform:translateY(0);
-
-    }
-
-}
-
-.modal-conteudo img{
-
-    width:220px;
-
-    margin:25px auto;
-
-    display:block;
-
-}
-
-.fechar{
-
-    position:absolute;
-
-    top:18px;
-
-    right:22px;
-
-    font-size:34px;
-
+    background:none;
+    border:none;
+    color:#fff;
+    font-size:30px;
     cursor:pointer;
-
-    color:#12355B;
-
 }
 
-.modal .pix-chave{
+@media (max-width:768px){
 
-    background:#F8F5EF;
+    .navbar{
+        padding:15px 20px;
+    }
 
-    color:#12355B;
+    .menu-toggle{
+        display:block;
+    }
 
-    border:2px dashed #C8A96A;
+    .menu{
+        display:none;
+        position:absolute;
+        top:80px;
+        left:15px;
+        right:15px;
+        background:#12355B;
+        border-radius:15px;
+        flex-direction:column;
+        padding:15px;
+        gap:10px;
+    }
 
-    border-radius:15px;
+    .menu.ativo{
+        display:flex;
+    }
 
-    padding:18
-    .icone-presente{
-    font-size:70px;
-    margin-bottom:20px;
+    .menu a{
+        width:100%;
+        text-align:center;
+        padding:14px;
+    }
+
+    .hero h1{
+        font-size:48px;
+    }
+
+    .hero p{
+        font-size:18px;
+    }
 }
+@media(max-width:900px){
 
-.presente-card{
-    max-width:450px;
-    margin:40px auto;
-}.icone-presente{
-    font-size:70px;
-    margin-bottom:20px;
+...
 }

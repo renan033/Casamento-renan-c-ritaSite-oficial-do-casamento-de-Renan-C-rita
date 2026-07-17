@@ -140,5 +140,65 @@ secoes.forEach((secao)=>{
 
     observador.observe(secao);
 
+.menu-toggle{
+    display:none;
+    background:none;
+    border:none;
+    color:#fff;
+    font-size:30px;
+    cursor:pointer;
+}
 
+@media (max-width:768px){
+
+    .navbar{
+        padding:15px 20px;
+    }
+
+    .menu-toggle{
+        display:block;
+    }
+
+    .menu{
+        display:none;
+        position:absolute;
+        top:80px;
+        left:15px;
+        right:15px;
+        background:#12355B;
+        border-radius:15px;
+        flex-direction:column;
+        padding:15px;
+        gap:10px;
+    }
+
+    .menu.ativo{
+        display:flex;
+    }
+
+    .menu a{
+        width:100%;
+        text-align:center;
+        padding:14px;
+    }
+
+    .hero h1{
+        font-size:48px;
+    }
+
+    .hero p{
+        font-size:18px;
+    }
+}
+const menuBtn = document.getElementById("menu-btn");
+const menu = document.getElementById("menu");
+
+menuBtn.onclick = () => {
+    menu.classList.toggle("active");
+};
+
+document.querySelectorAll(".menu a").forEach(link => {
+    link.onclick = () => {
+        menu.classList.remove("active");
+    };
 });
