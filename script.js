@@ -36,7 +36,7 @@ if (contador) {
     function atualizarContador() {
 
         // 03/09/2026 às 17:00 (horário local)
-        const dataCasamento = new Date(2026, 8, 3, 17, 0, 0);
+       const casamento = new Date(2026, 9, 3, 17, 0, 0);
 
         const agora = new Date();
 
